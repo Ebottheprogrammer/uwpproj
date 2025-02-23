@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <StackPanel/>
+                <Button  Content="Button" Height="127" Width="235" Click="Button_Click"/>
+                <TextBox x:Name="input" FontSize="40" Text="" Width="399" RenderTransformOrigin="0.224,0.591"/>
+                <TextBlock x:Name="outp" Text="TextBlock" TextWrapping="Wrap" Height="55" Width="444"/>
+            </StackPanel>
+<!--this is where the image is located-->
+        <StackPanel>
+            <Image x:Name="imgsource" Source=" "  Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" NineGrid="0,-100,0,0" Margin="0,300,0,0"/>
+            
+        </StackPanel>
+        <StackPanel>
+            <Image x:Name="skib" Source="https://uhf.microsoft.com/images/microsoft/RE1Mu3b.png" Height="100" Width="100"/>
+        </StackPanel>
+    </Grid>
+</Page>
